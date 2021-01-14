@@ -1,2 +1,2 @@
 # p5-ruch-czasteczek
-P5 — rucz cząsteczek
+P5 — ruch cząsteczek
