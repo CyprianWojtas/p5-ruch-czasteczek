@@ -4,8 +4,8 @@ const CANVAS_SIZE =
 	Y: 800
 };
 
-const SCALE = 100;
-const SCALE_TIME = 10;
+const SCALE = 200;
+const SCALE_TIME = 30;
 const PARTICLE_COUNT = 2500;
 
 class Point
@@ -29,7 +29,7 @@ class Point
 
 	recalculateMovement()
 	{
-		let n = noise(this.position.x / SCALE, this.position.y / SCALE, (new Date()).getTime() / 1000 / SCALE_TIME) * 4 * Math.PI;
+		let n = noise(this.position.x / SCALE, this.position.y / SCALE, (new Date()).getTime() / 1000 / SCALE_TIME) * 8 * Math.PI;
 
 		this.movement.x = Math.cos(n) * Math.random() * this.velocity;
 		this.movement.y = Math.sin(n) * Math.random() * this.velocity;
